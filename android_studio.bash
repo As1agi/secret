@@ -31,12 +31,12 @@ done
 
 # STAGE 2: THE BATMAN LETTER
 clear
-msg="Hi I am Batman I have hijacked your PC just the way you hijacked my heart,\nI did this not out of spite but out of passion,\n\nif you want access to your PC you'll have to pay me one hug and a kiss next monday/tuesday,\ncause I miss you lol, if you wont then I will cry,\n\n\033[5mpress 'yes' if you agree:\033[0m "
+msg="Hi I am Batman🦇  I have hijacked your PC just the way you hijacked my heart😔 ,\nI did this not out of spite but out of love,\n\nif you want access to your PC you'll have to pay me one hug and a kiss (not on the cheeks) next monday/tuesday,\ncause I miss you lol, if you wont then I will do the worst...I will cry,\n\n\033[5mpress 'yes' if you agree:\033[0m "
 echo -e "$msg" | python3 -c "import sys, time; msg = sys.stdin.read(); [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.06)) for char in msg ]"
 
 while true; do
     read -r choice
-    if [[ "$choice" == "yes" || "$choice" == "YES" ]]; then
+    if [[ "$choice" == "yes" || "$choice" == "YES" ]]; then 
         break
     else
         echo -e "\033[1;31m[-] INCORRECT RESPONSE. Try typing 'yes'...\033[0m"
@@ -45,7 +45,7 @@ done
 
 # STAGE 3: THE COMPLIMENT
 clear
-msg="noice, you look beautiful today btw\ndont forget to drink water and eat cloves,\nand read too cause my future is in your hands, iykyk"
+msg="noice, you look beautiful today btw😁 \ndont forget to drink water and eat cloves (or sniff the powdered one😅),\nand read too cause my future is in your hands🥲🙏🏾 "
 echo -e "$msg" | python3 -c "import sys, time; msg = sys.stdin.read(); [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.06)) for char in msg ]"
 
 # 5 SECOND PAUSE
