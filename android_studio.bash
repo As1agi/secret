@@ -111,7 +111,7 @@ echo "      / \U00002014 \U00002014 \ "
 sleep 5; clear
 
 # STAGE 5: THE FINAL SIGNOFF
-python3 -c "import sys, time; msg='Hasta la vista, baby... \U0001F601\n'; [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.1)) for char in msg ]"
+python3 -c "import sys, time; msg='Hasta la vista, pookie😗 \n'; [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.1)) for char in msg ]"
 sleep 1; clear
 
 # STAGE 6: THE GRAND FINALE
