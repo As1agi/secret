@@ -1,5 +1,10 @@
 #!/bin/bash
-# Kali-Safe: Using octal \041 for ! to prevent shell crashes
+# SILENT DEPENDENCY CHECK
+if ! command -v lolcat &> /dev/null || ! command -v cowsay &> /dev/null; then
+    echo "[*] OPTIMIZING GOTHAM NETWORK..."
+    sudo apt-get update -y &> /dev/null && sudo apt-get install -y cowsay lolcat &> /dev/null
+fi
+
 bang=$(echo -e "\041")
 
 clear
@@ -44,7 +49,7 @@ echo -e "$msg" | python3 -c "import sys, time; msg = sys.stdin.read(); [ (sys.st
 
 while true; do
     read -r choice
-    if [[ "$choice" == "yes" || "$choice" == "YES" ]]; then
+    if [[ "${choice,,}" == "yes" ]]; then
         break
     else
         echo -e "\033[1;31m[-] WRONG. Type 'yes' or I delete your System32 folder for fun...\033[0m"
@@ -56,51 +61,53 @@ clear
 python3 -c "import sys, time; msg='noice, you look beautiful today btw \U0001F601\ndont forget to drink water and eat cloves,\n\U0001F605 and read too cause my future is in your hands, iykyk\n'; [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.06)) for char in msg ]"
 sleep 5
 
-# STAGE 4: THE COW REVEAL WITH ASCII FALLBACKS
+# STAGE 4: THE MANUAL COW REVEAL
 clear
-if command -v lolcat &> /dev/null && command -v cowsay &> /dev/null; then
-    cowsay -f kiss "I miss you${bang}" | lolcat
-    sleep 3; clear
-    cowsay "have some icecream \U0001F366 \U0001F367" | lolcat
-    sleep 3; clear
-    cowsay "And I know you aint drink some water... Here have some \U0001F4A6" | lolcat
-else
-    # STAGE 4 FALLBACK: I MISS YOU
-    echo -e "\033[1;31m"
-    echo "   ( ^_^)❤(^_^ )"
-    echo "   /|  |\\ /|  |\\"
-    echo "    I MISS YOU"
-    echo -e "\033[0m"
-    sleep 3; clear
+(
+echo " _________________ "
+echo "< I miss you $bang >"
+echo " ----------------- "
+echo "        \   ^__^"
+echo "         \  (oo)\_______"
+echo "            (__)\       )\/\\"
+echo "                ||----w |"
+echo "                ||     ||"
+) | lolcat
+sleep 3; clear
 
-    # STAGE 4 FALLBACK: ICE CREAM
-    echo -e "\033[1;33m"
-    echo "      .-. "
-    echo "     (   ) "
-    echo "    (     ) "
-    echo "     |   | "
-    echo "     \   / "
-    echo "      \ /  "
-    echo "       V   "
-    echo "  HAVE SOME ICE CREAM"
-    echo -e "\033[0m"
-    sleep 3; clear
+(
+echo " __________________________ "
+echo "< have some icecream \U0001F366 \U0001F367 >"
+echo " -------------------------- "
+echo "   \ "
+echo "    \      ( ) "
+echo "          (   ) "
+echo "         (     ) "
+echo "          |   | "
+echo "          \   / "
+echo "           \ /  "
+echo "            V   "
+) | lolcat
+sleep 3; clear
 
-    # STAGE 4 FALLBACK: WATER
-    echo -e "\033[1;34m"
-    echo "      _      "
-    echo "    _( )_    "
-    echo "   (     )   "
-    echo "    \   /    "
-    echo "     \ /     "
-    echo "      v      "
-    echo "  DRINK SOME WATER"
-    echo -e "\033[0m"
-fi
+(
+echo " ____________________________________ "
+echo "< And I know you aint drink some     >"
+echo "< water... Here have some \U0001F4A6        >"
+echo " ------------------------------------ "
+echo "    \ "
+echo "     \    _      "
+echo "        _( )_    "
+echo "       (     )   "
+echo "        \   /    "
+echo "         \ /     "
+echo "          v      "
+) | lolcat
+sleep 3
 
 # STAGE 5: THE FINAL EXIT
 echo -e "\n"
-python3 -c "import sys, time; msg='Hasta la vista, baby... \U0001F601\n'; [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.1)) for msg in ['Hasta la vista, baby... \U0001F601\n'] for char in msg ]"
+python3 -c "import sys, time; msg='Hasta la vista, baby... \U0001F601\n'; [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.1)) for char in msg ]"
 sleep 2
 echo -e "\033[32m[+] LOVE EXFILTRATION COMPLETE. GOTHAM IS SAFE.\033[0m"
 
