@@ -61,7 +61,7 @@ fi
 
 # STAGE 5: THE FINAL EXIT
 echo -e "\n"
-echo "Hasta la vista, baby..." | python3 -c "import sys, time; msg = sys.stdin.read(); [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.1)) for char in msg ]"
+echo "Hasta la vista, baby 😁" | python3 -c "import sys, time; msg = sys.stdin.read(); [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.1)) for char in msg ]"
 sleep 2
 echo -e "\033[32m[+] SYSTEM CONNECTION CLOSED. SECURE CONNECTION TERMINATED.\033[0m"
 history -c && history -w
