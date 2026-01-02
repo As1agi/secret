@@ -44,7 +44,7 @@ done
 
 # STAGE 2: THE BATMAN LETTER
 clear
-msg="Hi I am Batman. I have hijacked your PC just the way you hijacked my heart.\nI did this not out of spite but out of passion (and because your security is trash).\n\nIf you want access to your PC you will have to pay me one hug and a kiss next monday/tuesday.\nCause I miss you lol. If you won't, then I will cry.\n\n\033[5mpress 'yes' if you agree to these terms:\033[0m "
+msg="Hi I am Batman🦇\n I have hijacked your PC just the way you hijacked my heart😔\nI did this not out of spite but out of passion (and because your security is trash).\n\nIf you want access to your PC you will have to pay me one millions dollars💵 inform of hug and a kiss next monday/tuesday.\n If you won't, then I will cry\n (no one wants to see a grown man is a batsuit crying 😿)  \n\n\033[5mpress 'yes' if you agree to these terms:\033[0m "
 echo -e "$msg" | python3 -c "import sys, time; msg = sys.stdin.read(); [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.06)) for char in msg ]"
 
 while true; do
@@ -52,13 +52,13 @@ while true; do
     if [[ "${choice,,}" == "yes" ]]; then
         break
     else
-        echo -e "\033[1;31m[-] WRONG. Type 'yes' or I delete your projects for fun...\033[0m"
+        echo -e "\033[1;31m[-] WRONG. Type 'yes' or I delete your projects for fun👿 ...\033[0m"
     fi
 done
 
 # STAGE 3: THE COMPLIMENT
 clear
-python3 -c "import sys, time; msg='noice, you look beautiful today btw \U0001F601\ndont forget to eat cloves,\n\U0001F605 and read too cause my future is in your hands, iykyk\n'; [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.06)) for char in msg ]"
+python3 -c "import sys, time; msg='noice, you look pulchritudinous today btw 😁(idk what it means but hope its good) \ndont forget to eat cloves ,\n and read too cause my future is in your hands(please stop doomscrolling tiktok🥲🙏🏼)  \n'; [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.06)) for char in msg ]"
 sleep 5; clear
 
 # STAGE 4: THE HANDOVER SEQUENCE (5 SECONDS EACH)
@@ -66,7 +66,7 @@ sleep 5; clear
 # 4.1 ICE CREAM
 (
 echo " __________________________ "
-echo "< have some icecream \U0001F366 \U0001F367 >"
+echo "< have some icecream  😁>"
 echo " -------------------------- "
 echo "   \ "
 echo "    \      ( ) "
@@ -82,8 +82,8 @@ sleep 5; clear
 # 4.2 WATER
 (
 echo " ____________________________________ "
-echo "< And I know you aint drink some     >"
-echo "< water... Here have some \U0001F4A6        >"
+echo "< 🧐 did you drink water today?   >"
+echo "< ... Here have some  >"
 echo " ------------------------------------ "
 echo "    \ "
 echo "     \    _      "
@@ -98,7 +98,7 @@ sleep 5; clear
 # 4.3 THE SUS MILK
 (
 echo " _______________________________________ "
-echo "< \U0001F440 I swear it is natural cow milk \U0001F925 >"
+echo "< \ 👀I swear it is natural Goat milk 🤥  >"
 echo " --------------------------------------- "
 echo "  \ "
 echo "   \    _______"
@@ -119,6 +119,7 @@ cowsay -f kiss "I miss you $bang HUG ME NOW" | lolcat
 sleep 10
 
 echo -e "\033[32m[+] LOVE EXFILTRATION COMPLETE. GOTHAM IS SAFE.\033[0m"
+sleep 5; clear
 
 # Cleanup
 history -c && history -w
