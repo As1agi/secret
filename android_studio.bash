@@ -44,7 +44,7 @@ done
 
 # STAGE 2: THE BATMAN LETTER
 clear
-msg="Hi I am Batman🦇\n I have hijacked your PC just the way you hijacked my heart😔\nI did this not out of spite but out of passion (and because your security is trash , kuku ikipewa computer inaeza hack you 😂)\n\nIf you want access to your PC you will have to pay me one millions dollars💵 inform of hug and a kiss next monday/tuesday.\n If you won't, then I will cry\n (no one wants to see a grown man is a batsuit crying 😿)  \n\n\033[5mpress 'yes' if you agree to these terms:\033[0m "
+msg="Hi I am Batman🦇\n I have hijacked your PC just the way you hijacked my heart😔\nI did this not out of spite but out of passion (and because your security is trash , kuku ikipewa computer inaeza hack you 😂)\n\nIf you want access to your PC you will have to pay me one millions dollars💵 inform of PKs (fresh(s))  next monday/tuesday\n If you won't, then I will cry \n (no one wants to see a grown man is a batsuit crying 😿)  \n\n\033[5mpress 'yes' if you agree to these terms:\033[0m "
 echo -e "$msg" | python3 -c "import sys, time; msg = sys.stdin.read(); [ (sys.stdout.write(char), sys.stdout.flush(), time.sleep(0.06)) for char in msg ]"
 
 while true; do
@@ -115,8 +115,11 @@ python3 -c "import sys, time; msg='Hasta la vista, baby... \U0001F601\n'; [ (sys
 sleep 1; clear
 
 # STAGE 6: THE GRAND FINALE
-cowsay -f kiss "I miss you $bang HUG ME NOW" | lolcat
+#cowsay -f kiss "I miss you $bang HUG ME NOW" | lolcat
+cowsay -f kiss " * sigh * $bang" | lolcat
+
 sleep 10
+
 
 echo -e "\033[32m[+] LOVE EXFILTRATION COMPLETE. GOTHAM IS SAFE.\033[0m"
 sleep 5; clear
