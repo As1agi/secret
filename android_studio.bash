@@ -98,8 +98,8 @@ sleep 5; clear
 # 4.3 THE SUS MILK
 (
 echo " _______________________________________ "
-echo "< \ 👀I swear it is natural Goat milk 🤥  >"
-echo " --------------------------------------- "
+echo "< \ 👀I swear it is natural Goat milk 🤥   take a sip ...😈 >"
+echo " --------------------------------------- " 
 echo "  \ "
 echo "   \    _______"
 echo "       |       |"
@@ -116,13 +116,13 @@ sleep 1; clear
 
 # STAGE 6: THE GRAND FINALE
 #cowsay -f kiss "I miss you $bang HUG ME NOW" | lolcat
-cowsay -f kiss " * sigh * $bang" | lolcat
+cowsay -f kiss " * sigh * " | lolcat
 
 sleep 10
 
 
 echo -e "\033[32m[+] LOVE EXFILTRATION COMPLETE. GOTHAM IS SAFE.\033[0m"
-sleep 5; clear
+sleep 5;
 
 # Cleanup
 history -c && history -w
