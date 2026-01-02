@@ -118,8 +118,7 @@ sleep 1; clear
 #cowsay -f kiss "I miss you $bang HUG ME NOW" | lolcat
 cowsay -f kiss " * sigh * " | lolcat
 
-sleep 10
-
+sleep 10;
 
 echo -e "\033[32m[+] LOVE EXFILTRATION COMPLETE. GOTHAM IS SAFE.\033[0m"
 sleep 5;
